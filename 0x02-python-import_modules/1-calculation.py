@@ -1,41 +1,13 @@
 #!/usr/bin/python3
 
+if __name__ == "__main__":
+    """Print the sum, difference, multiple and quotient of 10 and 5."""
+    from calculator_1 import add, sub, mul, div
 
+    a = 10
+    b = 5
 
-def element_at(my_list, idx):
-
-
-
-            if idx < 0:
-
-
-
-                                    return (None)
-
-
-
-
-
-
-
-                                                    length = len(my_list)
-
-
-
-
-
-
-
-                                                                            if idx > length - 1:
-
-
-
-                                                                                                                    return (None)
-
-
-
-
-
-
-
-                                                                                                                                                    return(my_list[idx])
+    print("{} + {} = {}".format(a, b, add(a, b)))
+    print("{} - {} = {}".format(a, b, sub(a, b)))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
+    print("{} / {} = {}".format(a, b, div(a, b)))
